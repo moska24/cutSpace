@@ -1,0 +1,68 @@
+.header__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__text{
+    width: 467px;
+    p{
+        line-height: 27px;
+        letter-spacing: 1.15px;
+        margin-bottom: 42px;
+    }
+}
+.header__title{
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 79px;
+    letter-spacing: 0.8px;
+    padding-bottom: 25px;
+    margin-right: -190px;
+    position: relative;
+}
+.header__img{
+    img{
+    border-radius: 40px 40px 40px 0px;
+    }
+}
+.form{
+    width: 459px;
+    height: 58px;
+    box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);
+    border-radius: 29px;
+}
+.form__label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding-left: 28px;
+    &::before {
+        content: '';
+        display: block;
+        width: 24px;
+        height: 19px;
+        background-image: url('/img/icons/mail.svg');
+    }
+}
+.form__input{
+    padding-left: 20px;
+    flex-grow: 1;
+    margin-right: 5px;
+    border: none;
+    &::placeholder {
+        color: #bbb;
+    }
+}
+.form--active{
+    box-shadow: 0px 17px 42px rgba(255, 165, 40, 0.12);
+}
+
+.form__button{
+    background-color: #F78434;
+    color: #fff;
+    transition: background-color 0.2s ease-in;
+    &:hover{
+        background-color: #EF6E14;
+    }
+}
